@@ -1,6 +1,5 @@
 /**
- * Escribe una función que haga lo siguiente para los valores dados: sumar, restar,
- * dividir y multiplicar.
+ * Escribe una función que haga lo siguiente para los valores dados: + (sumar), - (restar), / (dividir) y * (multiplicar).
  *
  * Debes tener en cuenta que las variables (incluido los números), están definidos
  * como strings utiliza algunas condiciones y aplicar la operación aritmética.
