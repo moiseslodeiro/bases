@@ -9,9 +9,8 @@
  */
 
 // Inicio código
-function ship ()
-{
+function isFree(objects) {
 }
 // Fin código
 
-module.exports = ship
+module.exports = isFree
