@@ -7,11 +7,11 @@ const Player = require('./player')
  */
 
 const player1 = new Player(36, 187, 85, 'tenis')
-player1.name = 'Rafa Nadal';
+player1.name = 'Rafa Nadal'
 const player2 = new Player(32, 170, 59, 'swimming')
-player2.name = 'Mireia Belmonte';
-const player3 = new Player(34, 185, 80, 'sillonball')
-player3.name = 'Moisés Lodeiro';
+player2.name = 'Mireia Belmonte'
+const player3 = new Player(35, 185, 80, 'sillonball')
+player3.name = 'Moisés Lodeiro'
 
 test('Test Rafa Nadal', () => {
   expect(player1.getAge()).toBe('Rafa is 36')
@@ -30,7 +30,7 @@ test('Test Mireia Belmonte', () => {
 })
 
 test('Test Moi :)', () => {
-  expect(player3.getAge()).toBe('Moisés Lodeiro is 34')
+  expect(player3.getAge()).toBe('Moisés Lodeiro is 35')
   expect(player3.getLastName()).toBe('Lodeiro')
   expect(player3.getHeight()).toBe('Moisés Lodeiro is 185cm')
   expect(player3.getWeight()).toBe('Moisés Lodeiro weighs 80kg')
