@@ -216,3 +216,5 @@ soluciones/*.js
 tmp
 clases/*.js
 clase/*.js
+
+.vscode
