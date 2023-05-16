@@ -1,12 +1,12 @@
 const multi = require('./multi')
 
-const cartridge01 = {
+let cartridge01 = {
   cyan: 5,
   magenta: 3,
   yellow: 7
 }
 
-const cartridge02 = {
+let cartridge02 = {
   cyan: 5,
   magenta: 2,
   yellow: 3
@@ -29,6 +29,20 @@ const page03 = {
   magenta: 2,
   yellow: 3
 }
+
+beforeEach(() => {
+  cartridge01 = {
+    cyan: 5,
+    magenta: 3,
+    yellow: 7
+  }
+
+  cartridge02 = {
+    cyan: 5,
+    magenta: 2,
+    yellow: 3
+  }
+});
 
 test('Prueba de impresión 01', () => {
   expect(multi(cartridge01, [

@@ -11,9 +11,44 @@
  * -1 en caso de no poder imprimir la totalidad de las páginas que tiene que imprimir.
  *
  */
+
 function printer(cartridge, pages) {
   // Inicio código
+  let numPages = 0;
+  for (let i = 0; i < pages.length; i++) {
+    console.log(cartridge);
+
+    // console.log(pages[i].yellow);
+    if (cartridge.cyan >= pages[i].cyan && cartridge.yellow >= pages[i].yellow && cartridge.magenta >= pages[i].magenta) {
+      cartridge.cyan -= pages[i].cyan;
+      cartridge.magenta -= pages[i].magenta;
+      cartridge.yellow -= pages[i].yellow;
+      numPages++;
+    } else {
+      console.error('F');
+      return -1;
+    }
+  }
+
+  return numPages;
+
   // Fin código
 }
+
+/* const cartridge01 = {
+  cyan: 5,
+  magenta: 3,
+  yellow: 7
+}
+
+const page01 = {
+  cyan: 2,
+  magenta: 0,
+  yellow: 1
+}
+
+console.log(printer(cartridge01, [page01]))
+console.log(printer(cartridge01, [page01]))
+console.log(printer(cartridge01, [page01])) */
 
 module.exports = printer
